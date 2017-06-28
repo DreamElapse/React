@@ -1,0 +1,9 @@
+[{
+  "id":"home.global.select",
+  "defaultMessage":"Select中文",
+  "description":"哈俣"
+},{
+  "id":"home.global.citySelect",
+  "defaultMessage":"选择城市",
+  "description":"选择城市"
+}]

@@ -1,0 +1,61 @@
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html, body {
+  height: 100%;
+}
+html {
+  overflow: hidden;
+}
+body {
+  overflow: auto!important;
+  -webkit-overflow-scrolling:touch;
+}
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form, pre, blockquote, figure {
+  margin: 0;
+}
+ul, ol, menu, input, button {
+  margin: 0;
+  padding: 0;
+}
+/*个人添加begin*/
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul,a,img,div{
+  margin:0;
+  padding:0;
+  outline:0;
+}
+ol, ul, dl {
+  list-style: none;
+}
+fieldset,img{border:0;}
+img{
+  display: inline-block;
+  vertical-align:top;
+}
+/*个人添加end*/
+.container {
+}
+.page{
+  position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+  overflow: scroll;
+}
+
+// 组件化方式覆盖蚂蚁样式
+
+// 添加flex-no-margin 去掉margin
+.am-flexbox{
+  &.flex-no-margin{
+    .am-flexbox-item{
+      margin-left: 0
+    }
+  }
+}
+
+// 自定义公共样式
+.horizontal-spacing{
+  width:@v-spacing-md;
+}
+
+.am-navbar-light{
+  background:#008acb;
+  color:#fff;
+}

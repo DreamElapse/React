@@ -1,0 +1,17 @@
+[
+    {
+        "imgUrl": "/api/assets/tel.png",
+        "text": " Wensite",
+        "linkUrl": "http://www.csair.com/cn/"
+    },
+        {
+        "imgUrl": "/api/assets/app.png",
+        "text": "APP",
+        "linkUrl": ""
+    },
+    {
+        "imgUrl": "/api/assets/tel.png",
+        "text": "95539",
+        "linkUrl": "tel:95539"
+    }
+]

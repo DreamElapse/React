@@ -1,0 +1,22 @@
+[
+    {
+        "imgUrl": "/api/assets/tel.png",
+        "text": "电脑版",
+        "linkUrl": "http://www.csair.com/cn/"
+    },
+        {
+        "imgUrl": "/api/assets/app.png",
+        "text": "官网APP",
+        "linkUrl": ""
+    },
+    {
+        "imgUrl": "/api/assets/wechat.png",
+        "text": "关注微信",
+        "linkUrl": ""
+    },
+    {
+        "imgUrl": "/api/assets/tel.png",
+        "text": "95539",
+        "linkUrl": "tel:95539"
+    }
+]

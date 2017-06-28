@@ -1,0 +1,145 @@
+[{
+  "id":"app.global.select",
+  "defaultMessage":"Select",
+  "description":""
+},{
+  "id":"app.global.pc",
+  "defaultMessage":"PC",
+  "description":""
+},{
+  "id":"app.global.app",
+  "defaultMessage":"官网app",
+  "description":""
+},{
+  "id":"app.global.wechat",
+  "defaultMessage":"关注微信",
+  "description":""
+},{
+  "id":"app.global.tel",
+  "defaultMessage":"95539",
+  "description":""
+},{
+  "id":"app.global.home",
+  "defaultMessage":"首页",
+  "description":""
+},{
+  "id":"app.global.flightStatus",
+  "defaultMessage":"航班动态",
+  "description":""
+},{
+  "id":"app.global.booking",
+  "defaultMessage":"预订",
+  "description":""
+},{
+  "id":"app.global.me",
+  "defaultMessage":"我的",
+  "description":""
+},{
+  "id":"app.global.changeCountry",
+  "defaultMessage":"选择国家",
+  "description":""
+},{
+  "id":"app.global.changeLanguage",
+  "defaultMessage":"选择语言",
+  "description":""
+},{
+  "id":"app.flight.oneWay",
+  "defaultMessage":"单程",
+  "description":""
+},{
+  "id":"app.flight.roundTrip",
+  "defaultMessage":"往返",
+  "description":""
+},{
+  "id":"app.flight.arrCity",
+  "defaultMessage":"出发城市",
+  "description":""
+},{
+  "id":"app.flight.depCity",
+  "defaultMessage":"到达城市",
+  "description":""
+},{
+  "id":"app.flight.arrDate",
+  "defaultMessage":"出发时间",
+  "description":""
+},{
+  "id":"app.flight.DepDate",
+  "defaultMessage":"到达时间",
+  "description":""
+},{
+  "id":"app.flight.adult",
+  "defaultMessage":"成人",
+  "description":""
+},{
+  "id":"app.flight.child",
+  "defaultMessage":"儿童",
+  "description":""
+},{
+  "id":"app.flight.peopleSelect.title",
+  "defaultMessage":"乘客选择",
+  "description":""
+},{
+  "id":"app.flight.peopleSelect.cancel",
+  "defaultMessage":"取消",
+  "description":""
+},{
+  "id":"app.flight.peopleSelect.confirm",
+  "defaultMessage":"确定",
+  "description":""
+},{
+  "id":"app.flight.search",
+  "defaultMessage":"搜索",
+  "description":""
+},{
+  "id":"app.cityPanel.title",
+  "defaultMessage":"目的地选择",
+  "description":""
+},{
+  "id":"app.cityPanel.searchPlaceHolder",
+  "defaultMessage":"关键词/拼音/中/英/三字码",
+  "description":""
+},{
+  "id":"app.cityPanel.domestic",
+  "defaultMessage":"国内",
+  "description":""
+},{
+  "id":"app.cityPanel.international",
+  "defaultMessage":"国际",
+  "description":""
+},{
+  "id":"app.cityPanel.locationAndHistory",
+  "defaultMessage":"当前/历史",
+  "description":""
+},{
+  "id":"app.cityPanel.hotCity",
+  "defaultMessage":"热门城市",
+  "description":""
+},{
+  "id":"app.cityPanel.order",
+  "defaultMessage":"字母排序",
+  "description":""
+},{
+  "id":"app.cityPanel.city",
+  "defaultMessage":"城市",
+  "description":""
+},{
+  "id":"app.cityPanel.airport",
+  "defaultMessage":"机场",
+  "description":""
+},{
+  "id":"app.datePanel.title",
+  "defaultMessage":"日历",
+  "description":""
+},{
+  "id":"app.datePanel.arrDate",
+  "defaultMessage":"出发日期",
+  "description":""
+},{
+  "id":"app.datePanel.depDate",
+  "defaultMessage":"到达日期",
+  "description":""
+},{
+  "id":"app.datePanel.viewMore",
+  "defaultMessage":"查看更多",
+  "description":""
+}]

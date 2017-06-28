@@ -1,0 +1,195 @@
+
+.am-navbar-right{
+    visibility:hidden;
+}  /*隐藏头部右边按钮*/
+
+/*页面内容*/
+.Orderdetail {
+    color: #333;
+    img{width:100%; display: inline-block;}
+    .topMsg {
+        padding: .3rem .26rem;
+        padding-left:  .6rem;
+        font-size: @fs-text-md;
+        line-height: .47rem;
+        background: @fill-base;
+
+        p:first-child{
+            font-size: @fx-text-lar;
+            position:relative;
+        }
+        p:first-child,p:last-child{ 
+            display: flex; 
+            -webkit-display:flex;
+            justify-content:space-between;
+            -webkit-justify-content:space-between;
+            
+        }
+        p{
+            img{ 
+                width:0.26rem;
+                padding:0 0.2rem;
+                vertical-align: middle;    
+            }
+        }
+        p:first-child img{
+            width:0.26rem;
+            position:absolute;
+            left: -.55rem;
+            top: .07rem;
+        }
+        
+    }
+    
+    .topMsg2 {
+        padding: .4rem .26rem;
+        padding-left:  .6rem;
+        font-size: @fs-text-lar;
+        line-height: .47rem;
+        background: @fill-base;
+
+        p:first-child{
+            position:relative;
+            display: flex; 
+            justify-content:space-between;
+        }
+       
+        p img{
+            width:0.32rem;
+            position:absolute;
+            left: -.4rem;
+            top: .07rem;
+        }
+        
+    }
+
+    .orderList{
+        margin-top: .3rem;
+        background: @fill-base;
+
+        h3{
+            font-size:@fx-text-lar;
+            font-weight:normal;
+            padding:0.15rem 0;
+            padding-left:0.25rem;
+            border-bottom:1px solid #e8e8e8;
+
+            img{
+                width:0.27rem;
+                margin-right: 0.1rem;
+                vertical-align:sub;
+                margin-bottom: 0.03rem;
+                
+            }
+        }
+        li{
+            padding: .3rem .25rem;
+            border-bottom: 1px solid #e8e8e8;
+            line-height: 0.5rem;
+            overflow: hidden;
+
+            img{ 
+                float:left; width:28%;
+                margin-right: 0.2rem;
+            }
+            div{
+                float:left;
+                width:67%;
+            }
+            h4{
+                font-weight:normal;
+                font-size: @fs-text-md;
+            }
+            p{
+                font-size: @fs-text-md;
+                color:#bababa;
+                display: flex; 
+                -webkit-display:flex;
+                justify-content:space-between;
+                -webkit-justify-content:space-between;
+                span{
+                    font-size: @fs-text-lar;
+                }
+                em{ 
+                    font-style:normal;
+                    color:#ff4d4d;
+                }
+                a{
+                    font-style:normal;
+                    height:0.45rem;
+                    padding:0 0.15rem;
+                    line-height: 0.45rem;
+                    border: 1px solid #c5c5c5;
+                    border-radius: 1rem;
+                    color:#333;
+                }
+            }
+
+        }
+    }
+
+    .formDetail {
+        margin-top:0.35rem;
+        background:#fff;
+        font-size:@fs-text-md;
+        li{
+            padding:0.2rem;
+            border-bottom:1px solid #e2e2e2;
+            line-height: 0.4rem;
+
+            em{
+                font-style:normal;
+                color:#ff4d4d;
+            }
+            span{
+                display: inline-block;
+                padding: 0.1rem 0;
+            }
+
+            p{
+                display: flex; 
+                justify-content:space-between;
+
+                em{
+                    font-style:normal;
+                    color:#ff4d4d;
+                }
+            }
+        }
+
+        li:last-child{
+            text-align: right;
+        }
+    }
+
+    .bottom,.bottom2{
+        padding:0.2rem 0.05rem;
+        text-align: right;
+        background:#fff;
+        font-size:@fs-text-md;
+        .revise,.again,.logistics,.appraise{
+            width:1.5rem;
+            height:0.48rem;
+            display: inline-block;
+            text-align: center;
+            /*padding:0.09rem 0.2rem;*/
+            line-height: 0.48rem;
+            border: 1px solid #c5c5c5;
+            border-radius: 1rem;
+            color:#333;
+            margin:0 0.15rem;
+        }
+        .again,.appraise{
+            border-color:#2fb4ef;
+            color:#2fb4ef;
+        }
+    }
+}
+
+.hidden{
+    display:none;
+}
+
+.show{
+    display:block;
+}

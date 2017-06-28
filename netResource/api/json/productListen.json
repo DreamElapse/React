@@ -1,0 +1,22 @@
+[
+    {
+        "imgUrl": "/api/assets/checkin.png",
+        "text": "checkin",
+        "linkUrl": "https://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.checkin_new/seatCheck/"
+    },
+        {
+        "imgUrl": "/api/assets/redemption.png",
+        "text": "redemption",
+        "linkUrl": "https://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.SouthernAirlinesPearl_new/redemption"
+    },
+    {
+        "imgUrl": "/api/assets/pearl.png",
+        "text": "pearl",
+        "linkUrl": "http://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.SouthernAirlinesPearl_new/"
+    },
+    {
+        "imgUrl": "/api/assets/more.png",
+        "text": "more",
+        "linkUrl": "https://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.travelguide_new/"
+    }
+]

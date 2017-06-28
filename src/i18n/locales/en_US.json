@@ -1,0 +1,138 @@
+[{
+  "id":"app.global.select",
+  "defaultMessage":"Select",
+  "description":""
+},{
+  "id":"app.global.pc",
+  "defaultMessage":"Website",
+  "description":""
+},{
+  "id":"app.global.app",
+  "defaultMessage":"官网APP",
+  "description":""
+},{
+  "id":"app.global.tel",
+  "defaultMessage":"95539",
+  "description":""
+},{
+  "id":"app.global.home",
+  "defaultMessage":"Home",
+  "description":""
+},{
+  "id":"app.global.flightStatus",
+  "defaultMessage":"FlightStatus",
+  "description":""
+},{
+  "id":"app.global.booking",
+  "defaultMessage":"booking",
+  "description":""
+},{
+  "id":"app.global.me",
+  "defaultMessage":"my",
+  "description":""
+},{
+  "id":"app.global.changeCountry",
+  "defaultMessage":"Select country",
+  "description":""
+},{
+  "id":"app.global.changeLanguage",
+  "defaultMessage":"Select language",
+  "description":""
+},{
+  "id":"app.flight.oneWay",
+  "defaultMessage":"One-way",
+  "description":""
+},{
+  "id":"app.flight.roundTrip",
+  "defaultMessage":"Round-trip",
+  "description":""
+},{
+  "id":"app.flight.arrCity",
+  "defaultMessage":"Select City",
+  "description":""
+},{
+  "id":"app.flight.depCity",
+  "defaultMessage":"Select City",
+  "description":""
+},{
+  "id":"app.flight.arrDate",
+  "defaultMessage":"Select Date",
+  "description":""
+},{
+  "id":"app.flight.DepDate",
+  "defaultMessage":"Select Date",
+  "description":""
+},{
+  "id":"app.flight.adult",
+  "defaultMessage":"Adult",
+  "description":""
+},{
+  "id":"app.flight.child",
+  "defaultMessage":"Child",
+  "description":""
+},{
+  "id":"app.flight.peopleSelect.title",
+  "defaultMessage":"人员选择",
+  "description":""
+},{
+  "id":"app.flight.peopleSelect.cancel",
+  "defaultMessage":"Cancel",
+  "description":""
+},{
+  "id":"app.flight.peopleSelect.confirm",
+  "defaultMessage":"Submit",
+  "description":""
+},{
+  "id":"app.flight.search",
+  "defaultMessage":"Search",
+  "description":""
+},{
+  "id":"app.cityPanel.title",
+  "defaultMessage":"Date",
+  "description":""
+},{
+  "id":"app.cityPanel.searchPlaceHolder",
+  "defaultMessage":"China/Pinyin/English",
+  "description":""
+},{
+  "id":"app.cityPanel.domestic",
+  "defaultMessage":"Domestic",
+  "description":""
+},{
+  "id":"app.cityPanel.international",
+  "defaultMessage":"International",
+  "description":""
+},{
+  "id":"app.cityPanel.locationAndHistory",
+  "defaultMessage":"Location/History",
+  "description":""
+},{
+  "id":"app.cityPanel.hotCity",
+  "defaultMessage":"hot",
+  "description":""
+},{
+  "id":"app.cityPanel.order",
+  "defaultMessage":"order",
+  "description":""
+},{
+  "id":"app.cityPanel.city",
+  "defaultMessage":"city",
+  "description":""
+},{
+  "id":"app.cityPanel.airport",
+  "defaultMessage":"airport",
+  "description":""
+},{
+  "id":"app.datePanel.title",
+  "defaultMessage":"Select Date",
+  "description":""
+},{
+  "id":"app.datePanel.arrDate",
+  "defaultMessage":"Check-in",
+  "description":""
+},{
+  "id":"app.datePanel.",
+  "defaultMessage":"Check-out",
+  "description":""
+}]
+

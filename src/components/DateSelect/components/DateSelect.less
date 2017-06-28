@@ -1,0 +1,141 @@
+@import '../../../styles/_base.less';
+
+.date-select-input{
+  .sprite;
+  .div-input();
+  background-position:right -1300px;
+  &.selected{
+    font-weight: bold;
+    color: @color-text-base;
+  }
+  .select-date{
+    font-size: @font-size-subhead;
+  }
+  .select-week{
+    font-weight: normal;
+    margin-left: 8px;
+    font-size:@font-size-caption-sm;
+  }
+}
+
+@media only screen and (max-width:641px) and (orientation:portrait){   
+  .date-select-input .select-date{
+    font-size:25px;
+  } 
+  .date-select-input .select-week{
+    font-size:20px;
+  }
+}  
+
+.calendar-header{
+  .week-header{
+    background: #e8ecef;
+    height: 50px;
+      text-align: center;
+      .am-flexbox-item{
+        font-size:22px;
+      }
+      .color{
+        color: @brand-primary !important;
+      }
+    }
+
+  .week-container{
+    .am-flexbox-item{
+      margin-left: 0;
+    }
+  }
+  .am-tabs{  
+    .title{
+      color: @brand-primary;
+      font-size: @font-size-subhead;
+    }
+    .date{
+      display: none;
+    }
+    .am-tabs-tab-selected{
+      width: 100%;
+      background-color: #dceff8;
+      text-align: center;
+      line-height: 1.5;
+      .title{
+        font-size: @font-size-icontext;
+      }
+      .date{
+        display: block;
+        font-size: @font-size-caption-sm;
+      }
+    }
+  }
+}
+
+.calendar-content{
+  .month-section{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .daycell-container{
+    border-radius:@radius-xs;
+    margin: 10px 0;
+    .daycell{
+      text-align: center;
+      font-size: @font-size-base;
+      line-height: 32px;
+      .day{
+        padding-top: 37px;
+        color: @color-text-paragraph;
+      }
+      &.today{
+        border-bottom: 4px solid @brand-primary;
+        box-sizing: border-box;
+        .price{
+          color: @color-text-base-inverse;
+        }
+      }
+      // 节日中文文字太大 缩小
+      &.holiday{
+        font-size: @font-size-caption-sm;
+        .day{
+          color: @brand-primary;
+        }
+      }
+      .price{
+        font-size:19px;
+        &.lowest{
+          color: @calender-red;
+        }
+      }
+      &.disabled{
+        .day{
+          color: #cbcbcb !important;
+        }
+      }
+    }
+    &.day-active{
+      background-color: #e5004a;
+      .day{
+        color: @color-text-base-inverse !important;
+      }
+      .price{
+        color: @color-text-base-inverse !important;
+      }
+    } 
+  }
+  .footer{
+    padding:20px;
+    background-color:#f9f9f9;
+  }
+  .more{
+    margin:0 auto;
+    width:138px;
+    height:76px;
+    line-height:76px;
+    border-radius:@radius-xlg;
+    font-size:@font-size-subhead;
+    color:@brand-primary;
+    border: 1px solid @brand-primary;
+    text-align:center;
+  }
+}

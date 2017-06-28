@@ -1,0 +1,110 @@
+.am-navbar-right{
+    visibility:hidden;
+}  /*隐藏头部右边按钮*/
+
+/*页面内容*/
+.Logistics{
+    color:@color-text-base;
+   
+
+    /*上部份信息*/
+    .top{
+        padding: .3rem .25rem;
+        background: #fff;
+        overflow: hidden;
+        font-size: .24rem;
+
+        .good_pic{
+            width:20%;
+            border:1px solid #e8e8e8;
+            border-radius:.15rem;
+            background:#fff;
+            padding: .15rem;
+            float:left;
+            margin-top: .06rem
+        }
+
+        .top_r{
+            float:left;
+            padding-left: .3rem;
+            line-height: .38rem;
+
+            span{
+                color:#ff6c6c;
+            }
+        }
+    }
+    /*下部分运输状态*/
+    .Tstatus{
+        margin-top: .36rem;
+        background:#fff;
+        font-size: .25rem;
+
+        h3{
+            font-size: .28rem;
+            border-bottom:1px solid #eee;
+            padding: .24rem .25rem;
+
+        }
+        ul{
+            padding-left: .3rem;
+            overflow: hidden;
+            li:first-child{
+                color:#ff6c6c;
+            }
+
+            li{
+                padding-top: .25rem;
+                line-height: .42rem;
+                border-left:1px solid #bbb;
+                position:relative;
+                padding-left: .4rem;
+                
+                p{
+                    border-bottom:1px solid #eee;
+                    padding-bottom:  .25rem;
+                    padding-right: .25rem;
+                }
+                
+            }
+            li:after{
+                content:'';
+                position:absolute;
+                left:-.12rem;
+                top: .33rem;
+                display: inline-block;
+                vertical-align: middle;
+                width: .23rem;
+                height: .23rem;
+                border-radius: 50%;
+                background: #a1a1a1;
+            }
+            li:first-child:after{
+                background: #ff4d4d;
+                width: .3rem;
+                height: .3rem;
+                left: -.15rem;
+            }
+            li:first-child:before{
+                content:'';
+                width: .25rem;
+                height: .35rem;
+                display: block;
+                background: #fff;
+                position: absolute;
+                left: -.14rem;
+                top:0;
+            }
+            li:last-child:before{
+                content:'';
+                width: .25rem;
+                height: 3rem;
+                display: block;
+                background: #fff;
+                position: absolute;
+                left: -.14rem;
+                top: .5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@import '../../../styles/_base.less';
+.sticky{
+}
+.city-select-input{
+  .div-input();
+  font-size: @font-size-heading;
+  &.selected{
+    overflow: hidden;
+    font-weight:bold;
+    color: @color-text-base;
+  }
+}
+@media only screen and (max-width:641px) and (orientation:portrait){
+  .city-select-input{
+    font-size:30px;
+  }
+}
+.test{
+-webkit-transform: translateZ(0);
+}
+.hline{
+  margin: 15px 0;
+  background: url("../../../assets/hline.png") no-repeat center center;
+  background-size: 640PX 1PX;
+  text-align: center;
+  font-size: @font-size-caption-sm;
+}
+
+.city-list-container {
+  .city-tag-container{
+    padding-left: @h-spacing-lg;
+    .am-flexbox-item{
+      text-align:center;
+      .city-tag{
+        width:100%;
+        box-sizing:border-box;
+        white-space: nowrap;
+        overflow:hidden;
+        margin: 10px auto;
+        padding: 0;
+        border-radius: @radius-xs;
+        img{
+          margin-right:8px;
+          width:20px;
+          height: 28px;
+          line-height: @tag-height;
+        }
+      }
+    }
+  }
+  .am-list-header{
+    padding: 0;
+    display: block;
+    background-color: @fill-list-caption;
+    font-size: @font-size-caption-sm;
+    text-align: center;
+  }
+  .am-list-item{
+    .am-list-content{
+      font-size: @font-size-base;
+    }
+    .am-list-extra{
+      font-size: @font-size-caption-sm;
+    }
+  }
+
+}
+
+.am-indexed-list-quick-search-bar{
+  position: fixed;
+  right: 0;
+  z-index: 0;
+  text-align: center;
+  color: @brand-primary;
+  list-style: none;
+  padding: 0;
+  top:250px;
+  width:30px;
+  line-height:30px;
+  font-size: @font-size-caption-sm;
+  li{
+    padding:0;
+  }
+}
+.default-view{
+  padding-right:@h-spacing-lg;
+  box-sizing: border-box;
+}
+.result-view{
+  &.am-popup-mask{
+    top:178px;
+  }
+  .badge{
+    .am-badge-text{
+      padding:0 10px;
+      height: 24px;
+      line-height:24px;
+      border-radius:5px;
+      background-color:#00b3e8;
+      font-size:20px;
+    }
+    &.airport-badge{
+      padding-left:50px;
+      background-size:24px 24px;
+      background:url("../../../assets/airport-arrow.jpg") no-repeat 25px center ;
+      .am-badge-text{
+        background:#41b370;
+      }
+    }
+   &.city-airport-badge{
+    padding-left: 0;
+    background:none;
+    .am-badge-text{
+      background:#41b370;
+    }
+   }
+  }
+
+ .name{
+    font-size:@font-size-caption-sm;
+    margin-left:10px;
+  }
+  .detail{
+    font-size:@font-size-caption-sm;
+    margin-left:10px;
+    color:#c3c3c3;
+  }
+
+}

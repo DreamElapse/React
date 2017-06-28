@@ -1,0 +1,10 @@
+[{
+  "id":"home.global.select",
+  "defaultMessage":"Select",
+  "description":"英文"
+},{
+  "id":"home.global.citySelect",
+  "defaultMessage":"select city",
+  "description":"select city"
+}]
+

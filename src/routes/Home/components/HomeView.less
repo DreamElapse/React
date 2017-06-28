@@ -1,0 +1,84 @@
+@import '../../../styles/_base.less';
+
+@home-navbar-icon-width: 36px;
+@home-navbar-icon-height: 36px;
+@home-navbar-logo-icon-width: 291px;
+@home-navbar-logo-icon-height: 47px;
+@home-bar-fill: #28b9ea;
+
+.home-navbar{
+  background:@home-bar-fill;
+  .bar-lang-icon {
+    width: @home-navbar-icon-width;
+    height: @home-navbar-icon-height;
+  }
+
+  .bar-gb-icon{
+    .bar-lang-icon;
+  }
+
+
+  .bar-logo-icon{
+    width: @home-navbar-logo-icon-width;
+    height: @home-navbar-logo-icon-height;
+  }
+
+}
+
+.my-carousel {
+  display: none;
+  background: #fff;
+  a {
+    display: inline-block;
+    width: 100%;
+    margin: 0; padding: 0;
+    img {
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+}
+
+.home-tips{
+  .am-notice-bar-marquee{
+    font-size: @font-size-caption-sm;
+  }
+  .security-tips{
+    .sprite;
+    background-position: -60px -42px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+// tabbar 基本样式
+.tabbar-icon{
+  .sprite;
+  width: 40px;
+  height: 40px;
+}
+
+.am-tab-bar-bar {
+  border-top-color: #cacccf;
+}
+
+.tabbar-home{
+  .tabbar-icon;
+  background-position: 0 -1250px;
+}
+
+.tabbar-book{
+  .tabbar-icon;
+  background-position: 0 -1200px;
+}
+
+.tabbar-dynamics{
+  .tabbar-icon;
+  width: 80px;
+  background-position: 20px -1150px;
+}
+
+.tabbar-my{
+  .tabbar-icon;
+  background-position: 0 -1100px;
+}

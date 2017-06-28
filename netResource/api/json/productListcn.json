@@ -1,0 +1,42 @@
+[
+    {
+        "imgUrl": "/api/assets/checkin.png",
+        "text": "选座值机",
+        "linkUrl": "https://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.checkin_new/seatCheck/"
+    },
+    {
+        "imgUrl": "/api/assets/holiday.png",
+        "text": "假期",
+        "linkUrl": "http://waptuan.csairholiday.com/waptuan/view/tuanindex/waptuanindex.html"
+    },
+    {
+        "imgUrl": "/api/assets/redemption.png",
+        "text": "机票兑换",
+        "linkUrl": "https://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.SouthernAirlinesPearl_new/redemption"
+    },
+    {
+        "imgUrl": "/api/assets/alter.png",
+        "text": "退改升舱",
+        "linkUrl": "https://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.mytrip_new/orderList"
+    },
+    {
+        "imgUrl": "/api/assets/hotel.png",
+        "text": "酒店",
+        "linkUrl": "http://m.hotel.csairholiday.com/module/mobile/mobileHotelAction.do?mhd=index"
+    },
+    {
+        "imgUrl": "/api/assets/hire.png",
+        "text": "租车接送",
+        "linkUrl": "http://car.csairholiday.com/module/hirecar_mobile/selfdriving/index.jsp"
+    },
+    {
+        "imgUrl": "/api/assets/pearl.png",
+        "text": "南航明珠",
+        "linkUrl": "http://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.SouthernAirlinesPearl_new/"
+    },
+    {
+        "imgUrl": "/api/assets/more.png",
+        "text": "更多",
+        "linkUrl": "https://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.travelguide_new/"
+    }
+]
