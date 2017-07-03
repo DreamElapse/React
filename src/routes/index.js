@@ -8,7 +8,9 @@ import DetailDemo from './DetailDemo';  //第一个demo
 import Demo from './Demo' ;   //第二个demo
 import Logistics from './Logistics';  // 查看物流
 import OrderDetail from './OrderDetail';  // 订单详情
-import DrawbackDetail from './DrawbackDetail';  // 退款详情
+import RefundDetail from './RefundDetail';  // 退款详情
+import Appraise from './Appraise';  // 商品评价
+import Mycollect from './Mycollect';  // 我的收藏
 
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
@@ -31,8 +33,9 @@ export const createRoutes = (store) => ({
     Demo(store),
     Logistics(store),
     OrderDetail(store),
-    DrawbackDetail(store)
-
+    RefundDetail(store),
+    Appraise(store),
+    Mycollect(store)
   ]
 })
 

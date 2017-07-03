@@ -6,7 +6,27 @@
 /*页面内容*/
 .Orderdetail {
     color: #333;
-    img{width:100%; display: inline-block;}
+    .top{
+        height:1rem;
+        padding:0.5rem 0.6rem;
+        padding-bottom:0;
+        background:linear-gradient(90deg,#fa709a,#fee140);
+        
+        span{
+            float:left;
+            font-size:0.3rem;
+            color:@color-text-base-inverse;
+            line-height: 0.4rem;
+        }
+        img{ 
+            width:18%;
+            float:right;
+            margin-top: -0.25rem;
+        }
+
+
+    }
+    /*收货信息*/
     .topMsg {
         padding: .3rem .26rem;
         padding-left:  .6rem;
@@ -40,7 +60,7 @@
         }
         
     }
-    
+    /*付款成功收货人信息*/
     .topMsg2 {
         padding: .4rem .26rem;
         padding-left:  .6rem;
@@ -62,7 +82,7 @@
         }
         
     }
-
+    /*已买商品*/
     .orderList{
         margin-top: .3rem;
         background: @fill-base;
@@ -127,7 +147,7 @@
 
         }
     }
-
+    /*订单支付信息*/
     .formDetail {
         margin-top:0.35rem;
         background:#fff;
@@ -161,7 +181,7 @@
             text-align: right;
         }
     }
-
+    /*底部功能*/
     .bottom,.bottom2{
         padding:0.2rem 0.05rem;
         text-align: right;

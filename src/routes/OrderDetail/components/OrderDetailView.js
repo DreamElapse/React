@@ -3,8 +3,7 @@ import { findDOMNode } from 'react-dom'
 import NavBar  from 'components/Header';
 
 import './OrderDetail.less'
-import topImg from '../assets/top.jpg'
-import topImg2 from '../assets/top_2.jpg'
+import paid from '../assets/paid.png'
 import ziqu from '../assets/ziqu.png'
 import flight from '../assets/flight.png'
 import store from '../assets/store.png'
@@ -62,8 +61,12 @@ class OrderDetail extends Component{
             
             <div className="Orderdetail">
                 <NavBar router={this.props.router}  title="订单详情"></NavBar>
-                <img style={display1} src={topImg} onClick={clickSwit} alt=""/>
-                <img style={display3} src={topImg2} onClick={clickSwit} alt=""/>
+                
+                <div className="top" onClick={clickSwit}>
+                    <span style={display1}>买家已付款</span>
+                    <span style={display3}>交易成功</span>
+                    <img src={paid} alt=""/>
+                </div>
                 <div className="topMsg" style={display1} ref="click">
                     <p><img src={ziqu} alt=""/><span>收货人：{formMsg.name}</span><span>{formMsg.call}</span></p>
                     <p>航班：{formMsg.from}<img src={flight} />{formMsg.to}</p>

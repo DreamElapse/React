@@ -1,0 +1,222 @@
+.am-navbar-right{
+    visibility:hidden;
+}  /*隐藏头部右边按钮*/
+
+.Refund{
+    font-size:@fs-text-lar;
+    color:#333;
+
+    b,em,i{ 
+        font-style:normal;
+    }
+    h1,h2,h3,h4,h5,h6{ 
+        font-weight:normal;
+    }
+    /*上部布局*/
+    .top{
+        height:1.2rem;
+        padding:0.3rem 0.25rem;
+        padding-bottom:0;
+        background:linear-gradient(90deg,#fa709a,#fee140);
+        
+        span{
+            float:left;
+            font-size:0.3rem;
+            color:@color-text-base-inverse;
+            line-height: 0.4rem;
+
+            em{
+                font-size: @fs-text-md;
+            }
+        }
+        img{ 
+            width:18%;
+            float:right;
+            margin-top: -0.1rem;
+            margin-right: 0.1rem
+        }
+
+
+    }
+
+    .price_all{
+        font-size: @fs-text-lar;
+        background: @fill-base;
+        font-weight:normal;
+        padding:0.25rem 0.25rem;
+        
+        b{
+            color:#fe7881;
+        }
+
+    }
+    /*退款商品列表*/
+    .goods_list{
+        margin-top: .3rem;
+        background: @fill-base;
+
+        h4{
+            font-size:@fs-text-lar;
+            padding:0.2rem 0;
+            padding-left:0.25rem;
+            border-bottom:1px solid #e8e8e8;
+        }
+        li{
+            padding: .3rem .25rem;
+            border-bottom: 1px solid #e8e8e8;
+            line-height: 0.5rem;
+            overflow: hidden;
+            display: flex; 
+            justify-content:flex-start;
+            align-items: center;
+
+            img{ 
+                margin-right: 0.2rem;
+            }
+            div{
+                width:67%;
+            }
+            h5{
+                font-weight:normal;
+                font-size: @fs-text-lar;
+                }
+            p{
+                color:#bababa;
+                display: flex; 
+                justify-content:space-between;
+                span{
+                    font-size: @fs-text-lar;
+                }
+                em{ 
+                    font-style:normal;
+                    color:#ff4d4d;
+                }
+                
+            }
+
+        }
+    }
+    /*退款信息*/
+    .back_msg{
+        padding-bottom:0.1rem;
+        background: @fill-base;
+        margin-top:0.2rem;
+        h5{
+            padding:0.2rem 0;
+            padding-left:0.25rem;
+            font-size: @fs-text-lar;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        ul{
+            padding:0.2rem 0;
+            li{
+            padding:0.1rem 0.25rem;
+            /*line-height: 0.55rem;*/
+                b{
+                    color:#fe7881;
+                }
+            }
+        }
+        
+    }
+    /*退款流程*/
+    .back_detail{
+        margin-top: .36rem;
+        background:#fff;
+        font-size:  @fs-text-lar;
+
+        h5{
+            padding:0.2rem 0;
+            padding-left:0.25rem;
+            font-size: @fs-text-lar;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        ol{
+            padding-left: .3rem;
+            overflow: hidden;
+
+            li:first-child{
+                color:#ff6c6c;
+            }
+
+            li{
+                padding-top: .25rem;
+                line-height: .42rem;
+                border-left:1px solid #bbb;
+                position:relative;
+                padding-left: .4rem;
+                
+                p{
+                    border-bottom:1px solid #eee;
+                    padding-bottom:  .25rem;
+                    padding-right: .25rem;
+                }
+                
+            }
+            li:after{
+                content:'';
+                position:absolute;
+                left:-.12rem;
+                top: .33rem;
+                display: inline-block;
+                vertical-align: middle;
+                width: .23rem;
+                height: .23rem;
+                border-radius: 50%;
+                background: #a1a1a1;
+            }
+            li:first-child:after{
+                background: #ff4d4d;
+                width: .3rem;
+                height: .3rem;
+                left: -.15rem;
+            }
+            li:first-child:before{
+                content:'';
+                width: .25rem;
+                height: .35rem;
+                display: block;
+                background: #fff;
+                position: absolute;
+                left: -.14rem;
+                top:0;
+            }
+            li:last-child:before{
+                content:'';
+                width: .25rem;
+                height: 3rem;
+                display: block;
+                background: #fff;
+                position: absolute;
+                left: -.14rem;
+                top: .5rem;
+            }
+        }
+    }
+    /*底部按钮*/
+    .bottom{
+        padding:0.2rem 0.05rem;
+        margin-top: 0.3rem;
+        text-align: right;
+        background:#fff;
+        font-size:@fs-text-md;
+        box-shadow:0 -2px 5px #eee;
+
+
+        .delete,.call_seller{
+            width:1.5rem;
+            height:0.48rem;
+            display: inline-block;
+            text-align: center;
+            line-height: 0.48rem;
+            border: 1px solid #c5c5c5;
+            border-radius: 1rem;
+            color:#333;
+            margin:0 0.15rem;
+        }
+        .call_seller{
+            border-color:#2fb4ef;
+            color:#2fb4ef;
+        }
+    }
+}

@@ -1,0 +1,160 @@
+.am-navbar-right{
+    visibility:hidden;
+}  /*隐藏头部右边按钮*/
+
+.product_appraise{
+    font-size:@fs-text-lar;
+    color:#333;
+
+    b,em,i{ 
+        font-style:normal;
+    }
+    h1,h2,h3,h4,h5,h6{ 
+        font-weight:normal;
+    }
+    /*商品评价*/
+    .top_appraise,.bot_appraise{
+        padding:0.28rem 0.25rem ;
+        background: @fill-base;
+        display:flex;
+        justify-content:flex-start;
+        align-items:center;
+
+        img.goods_pic{
+            width:20%;
+            border:1px solid #e8e8e8;
+            border-radius:.15rem;
+            background:@fill-base;
+            padding: .15rem;
+            margin-top: .06rem;
+            margin-right:0.3rem;
+        }
+
+    }
+    .top_appraise ul,.bot_appraise ul{
+            margin-right: 0.25rem;
+            li{
+                float: left;
+                width:0.4rem;
+                height:0.5rem;
+                background: url('../assets/appraise.png') no-repeat;
+                background-size:100%;
+                background-position:center center;
+                
+            }
+            li.on{
+                
+                background: url('../assets/appraise_on.png') no-repeat 100%;
+                background-size:100%;
+                background-position:center center;
+            }
+
+            span:before{
+                content:'';
+                width:0;
+                border:0.2rem solid #000;
+                border-left-color:transparent;
+                border-bottom-color:transparent;
+                border-right-color:transparent;
+            }
+        }
+
+    .appr_main{
+        background: @fill-base;
+        padding-bottom: 0.2rem;
+        margin-top: 0.3rem;
+
+        textarea{
+            font-size:@fs-text-md;
+            padding:0.2rem 0.15rem;
+            display: block;
+            resize:none;
+            border: 1px solid #e8e8e8;
+            color:#666;
+            width: 90%;
+            height: 2rem;
+            box-sizing: border-box;
+            border-radius: 0.15rem;
+            margin:0.2rem auto;
+        }
+    }
+
+    .appr_pic{
+        margin-top: 0.3rem;
+        background: @fill-base;
+        
+        
+        .am-image-picker-list{
+            padding:0.2rem 0;
+            margin-bottom:0;
+            border-bottom:1px solid #e8e8e8;
+            .am-wingblank{
+                    margin-left: .25rem;
+                    margin-right: .25rem;
+                    
+                .am-flexbox-item{
+                    height:1rem;
+
+                    .am-image-picker-upload-btn{
+                        border: .02rem dashed #bdbdbd;
+                    }
+                    .am-image-picker-upload-btn:after,.am-image-picker-upload-btn:before{
+                        width: .02rem;
+                        height: .3rem;
+                        background-color: #bdbdbd;
+                    }
+                    .am-image-picker-upload-btn:after{
+                        width: .3rem;
+                        height: .02rem;
+                    }
+                }
+            }
+        }
+
+        p{
+            padding:0.2rem 0.25rem;
+            display: flex;
+            justify-content: space-between;
+            position:relative;
+            padding-left:0.65rem;
+            em{
+                font-size: 0.2rem;
+                color:#d5d5d5;
+            }
+        }
+        p:before{
+            content:"";
+            width:0.28rem;
+            height:0.28rem;
+            position:absolute;
+            left:0.25rem;
+            top:0.2rem;
+            background:#14aaec;
+            border-radius: 1rem;
+
+        }
+    }
+    .appr_store h5,.appr_pic h5,.appr_main h5{
+        font-size:@fs-text-lar;
+        padding:0.2rem 0.25rem;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    .appr_store{
+        padding:0.3rem 0;
+        background: @fill-base;
+        margin-top:0.3rem;
+        
+        .bot_appraise{
+            padding:0.1rem 0.25rem;
+
+            span{ 
+                margin-right:0.25rem;
+                font-size:0.22rem;
+            }
+        }
+    }
+
+
+
+}
