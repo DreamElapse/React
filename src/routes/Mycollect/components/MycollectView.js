@@ -3,56 +3,80 @@ import NavBar from 'components/Header'
 import { Tabs, WhiteSpace } from 'antd-mobile'
 
 import './Mycollect.less'
+import { goods_list } from './data'
 
-const TabPane = Tabs.TabPane;
+import icon_edit from '../assets/edit.png'
 
-function callback(key) {
-  console.log('onChange', key);
-}
 
-function handleTabClick(key) {
-  console.log('onTabClick', key);
-}
 
 class Mycollect extends Component{
     constructor (props) {
         super(props)
         this.state = {
-
+            show:'',
+            main_show:0,
+            
         }
     }
 
     componentWillMount(){
-        console.log('访问成功')
+        console.log('访问成功');
     }
 
-    componentDidMount(){
-
+    componentDidUpdate(){
+        console.log(this.state)
+        
     }
-
+    tabClick(i){
+        this.setState({
+            show:i,
+            main_show:i
+            
+        })
+    }
     render(){
+        const top_tab = ['商品','店铺','内容'];
+
         return(
             
             <div className="Mycollect">
                 <NavBar router={this.props.router} title="查看物流" ></NavBar>
                 
-                <Tabs defaultActiveKey="1" animated={false} onChange={callback} barStyle={{'color':'#fff'}}  onTabClick={handleTabClick}>
-                    <TabPane tab="选项卡一" key="1">
-                        <div>
-                        选项卡一内容
-                        </div>
-                    </TabPane>
-                    <TabPane tab="选项卡二" key="2">
-                        <div>
-                        选项卡二内容
-                        </div>
-                    </TabPane>
-                    <TabPane tab="选项卡三" key="3">
-                        <div>
-                        选项卡三内容
-                        </div>
-                    </TabPane>
-                </Tabs>
+                <div className="tab_nav">
+                    <ul ref="tab_list">
+                        {
+                            top_tab.map((value,i) => {
+                                const class_show = this.state.show == i ? 'on' : '';
+                                return <li key={'tab'+i} className={class_show}  onClick={this.tabClick.bind(this,i)}>{value}</li>
+                            })
+                        }
+                    </ul>
+                    <span>编辑<img src={icon_edit} alt=""/></span>
+                </div>
+                
+                <div className="tab_main">
+                    <ul>
+                        <li className={this.state.main_show == 0 ? 'on' : ''}>
+                            <dl className="goods_list">
+                                {
+                                    goods_list.map((value,i) => {
+                                       return( 
+                                            <dd key={'dd'+i}>
+                                                <label><input type="checkbox"/><i></i></label>
+                                                <img src={value.imgurl} alt=""/>
+                                                <p><em>{value.title}</em><br /><span>￥{value.price}</span></p>
+                                            </dd>
+                                        )
+                                   })
+                                }
+                                
+                            </dl>
+                        </li>
+                        <li className={this.state.main_show == 1 ? 'on' : ''}>main_2</li>
+                        <li className={this.state.main_show == 2 ? 'on' : ''}>main_3</li>
+                    </ul>
+                </div>
+                
             </div>
         )
     }

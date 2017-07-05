@@ -46,7 +46,7 @@ class Appraise extends Component {
       
     }
 
-    appr_Click(num,i) {
+    appr_Click(i) {
         for (let k = 0; k < this.refs.appr_list.children.length; k++) {
             this.refs.appr_list.children[k].className = '';
         }
@@ -81,7 +81,7 @@ class Appraise extends Component {
                     <ul ref="appr_list">
                         {
                             li_list.map((value, i) => {
-                                return <li onClick={this.appr_Click.bind(this,1,i)}  key={'li'+i}></li>
+                                return <li onClick={this.appr_Click.bind(this,i)}  key={'li'+i}></li>
                             })
                         }
                     </ul>

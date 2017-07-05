@@ -14,12 +14,12 @@ class Appraise extends Component {
         super(props)
         this.state = {
             appr_status: ['非常差', '差', '一般', '好', '非常好'],
-            now_status: {
-                status1:'非常好',
-                status2:'非常好',
-                status3:'非常好'
-            },
-           
+            now_status:'',
+            now_status2:'',
+            now_status3:'',
+            appr_num:0,
+            appr_num2:0,
+            appr_num3:0,
             files:[],
                 
         }
@@ -33,81 +33,27 @@ class Appraise extends Component {
 
     componentDidMount(){
         
-        if(window.localStorage.getItem('appr_num')){
-            this.setState({
-                now_status:{
-                    status1:window.localStorage.getItem('appr_status'),
-                    status2:'非常好',
-                    status3:'非常好'
-                }
-            })
-            const appr_num = window.localStorage.getItem('appr_num');
-
-            for (let k = 0; k < appr_num; k++) {
-                this.refs.appr_list1.children[k].className = 'on'
-            }
-        }else{
-            for(let i=0;i<5;i++){
-                this.refs.appr_list1.children[i].className = ''
-            }
-            for(let j=0;j<5;j++){
-                this.refs.appr_list1.children[j].className = 'on'
-            }
-        }
-      
     }
 
     appr_Click(i) {
-        for (let k = 0; k < 5; k++) {
-            this.refs.appr_list1.children[k].className = '';
-        }
-        for (let j = 0; j < i + 1; j++) {
-            this.refs.appr_list1.children[j].className = 'on'
-        }
         this.setState({
-            now_status: {
-                status1:this.state.appr_status[i],
-                status2:this.state.now_status.status2,
-                status3:this.state.now_status.status3
-            }
+            appr_num:i+1,
+            now_status:this.state.appr_status[i]
         })
-        localStorage.appr_num = i+1;
-        localStorage.appr_status = this.state.appr_status[i];
-        console.log(window.localStorage)
     }
 
     appr_Click2(i) {
-        for (let k = 0; k < 5; k++) {
-            this.refs.appr_list2.children[k].className = '';
-        }
-        for (let j = 0; j < i + 1; j++) {
-            this.refs.appr_list2.children[j].className = 'on'
-        }
         this.setState({
-            now_status: {
-                status1:this.state.now_status.status1,
-                status2:this.state.appr_status[i],
-                status3:this.state.now_status.status3
-            }
+            appr_num2:i+1,
+            now_status2:this.state.appr_status[i]
         })
-        
     }
 
     appr_Click3(i) {
-        for (let k = 0; k < 5; k++) {
-            this.refs.appr_list3.children[k].className = '';
-        }
-        for (let j = 0; j < i + 1; j++) {
-            this.refs.appr_list3.children[j].className = 'on'
-        }
         this.setState({
-            now_status: {
-                status1:this.state.now_status.status1,
-                status2:this.state.now_status.status2,
-                status3:this.state.appr_status[i]
-            }
+            appr_num3:i+1,
+            now_status3:this.state.appr_status[i]
         })
-        
     }
     
 
@@ -119,8 +65,8 @@ class Appraise extends Component {
     }
   
     render() {
-        const li_list = [1, 2, 3, 4, 5];
         const { files } = this.state;
+
         return (
             <div className="product_appraise">
                 <NavBar router={this.props.router} title="商品评价"></NavBar>
@@ -129,12 +75,13 @@ class Appraise extends Component {
                     <img className="goods_pic" src={goods} alt="" />
                     <ul ref="appr_list1" name="2">
                         {
-                            li_list.map((value, i) => {
-                                return <li onClick={this.appr_Click.bind(this, i)}  key={'li'+i}></li>
+                            this.state.appr_status.map((value, i) => {
+                                const class_on = this.state.appr_num > i ? 'on' : '';
+                                return <li onClick={this.appr_Click.bind(this, i)}  className={class_on} key={'li'+i}></li>
                             })
                         }
                     </ul>
-                    <span className="appr_status">{this.state.now_status.status1}</span>
+                    <span className="appr_status">{this.state.now_status}</span>
                 </div>
 
                 <div className="appr_main">
@@ -159,23 +106,25 @@ class Appraise extends Component {
                         <span>服务态度</span>
                         <ul ref="appr_list2">
                             {
-                                li_list.map((value, i) => {
-                                    return <li onClick={this.appr_Click2.bind(this, i)}  key={'li2'+i}></li>
+                                this.state.appr_status.map((value, i) => {
+                                    const class_on = this.state.appr_num2 > i ? 'on' : '';
+                                    return <li onClick={this.appr_Click2.bind(this, i)} className={class_on}  key={'li2'+i}></li>
                                 })
                             }
                         </ul>
-                        <em>{this.state.now_status.status2}</em>
+                        <em>{this.state.now_status2}</em>
                     </div>
                     <div className="bot_appraise">
                         <span>服务态度</span>
                         <ul ref="appr_list3">
                             {
-                                li_list.map((value, i) => {
-                                    return <li onClick={this.appr_Click3.bind(this, i)}  key={'li3'+i}></li>
+                                this.state.appr_status.map((value, i) => {
+                                    const class_on = this.state.appr_num3 > i ? 'on' : '';
+                                    return <li onClick={this.appr_Click3.bind(this, i)} className={class_on}  key={'li3'+i}></li>
                                 })
                             }
                         </ul>
-                        <em>{this.state.now_status.status3}</em>
+                        <em>{this.state.now_status3}</em>
                     </div>
                 </div>
 

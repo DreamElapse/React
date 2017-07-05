@@ -1,40 +1,48 @@
 import React, { Component } from 'react'
+import view from './view.less'
 
-export class Demo extends Component{
-    constructor (props) {
+export class Demo extends Component {
+    constructor(props) {
         super(props)
         this.state = {
-            name: "suibian",
-            site: "http://www.runoob.com"
+            star: 0,
+            arr:[1,2,3,4,5]
         }
+
     }
 
-    render(){
-        return(
-            <div>
-                <Name a={this.state.name} />
-                <Link b={this.state.site} />
+    componentWillMount(){
+
+        console.log(this.state)
+    }
+    
+    componentDidUpdate(){
+        console.log(this.state)
+        
+    }
+
+    clickHandle(i){
+        this.setState({
+            star:i+1
+        })
+    }
+    render() {
+        let star = this.state.star || 0;
+
+        return (
+            <div className="star-container">
+                {
+                    this.state.arr.map((value,i) => {
+                        const lightClass = star >= value ? 'light' : ''
+                        return <i key={i} className={lightClass} onClick={this.clickHandle.bind(this,i)}></i>
+                    })
+                }
+
             </div>
         )
     }
+    
 }
 
-var Name = React.createClass({
-  render: function() {
-    return (
-      <h1 data-a={this.props.a} >{this.props.a}</h1>
-    );
-  }
-});
- 
-var Link = React.createClass({
-  render: function() {
-    return (
-      <a data-a={this.props.b} href={this.props.b}>
-        {this.props.b}
-      </a>
-    );
-  }
-});
 
-export default Demo
+export default Demo 
