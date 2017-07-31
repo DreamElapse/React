@@ -2,26 +2,38 @@
 .am-navbar-right{
     visibility:hidden;
 }  /*隐藏头部右边按钮*/
-
+@fs-text-lar:.26rem;
 /*页面内容*/
 .Orderdetail {
     color: #333;
+    padding-bottom:1.2rem;
     .top{
-        height:1rem;
-        padding:0.5rem 0.6rem;
-        padding-bottom:0;
-        background:linear-gradient(90deg,#fa709a,#fee140);
+        position:relative;
         
         span{
-            float:left;
+            position:absolute;
+            top:0.55rem;
+            left:0.3rem;
             font-size:0.3rem;
             color:@color-text-base-inverse;
             line-height: 0.4rem;
+            em{
+                font-style:normal;
+                line-height: 0.4rem;
+                font-size:0.22rem;
+            }
         }
-        img{ 
-            width:18%;
-            float:right;
-            margin-top: -0.25rem;
+        span.short_top{
+            top:0.4rem;
+        }
+        img.paid{ 
+            width:17%;
+            position:absolute;
+            right:0.4rem;
+            top:0.25rem;
+        }
+        img.top_bg{
+            width:100%;
         }
 
 
@@ -35,7 +47,7 @@
         background: @fill-base;
 
         p:first-child{
-            font-size: @fx-text-lar;
+            font-size: @fs-text-lar;
             position:relative;
         }
         p:first-child,p:last-child{ 
@@ -75,10 +87,10 @@
         }
        
         p img{
-            width:0.32rem;
+            width:0.3rem;
             position:absolute;
-            left: -.4rem;
-            top: .07rem;
+            left: -.35rem;
+            top: .08rem;
         }
         
     }
@@ -88,10 +100,10 @@
         background: @fill-base;
 
         h3{
-            font-size:@fx-text-lar;
+            font-size:@fs-text-lar;
             font-weight:normal;
             padding:0.15rem 0;
-            padding-left:0.25rem;
+            padding-left:0.3rem;
             border-bottom:1px solid #e8e8e8;
 
             img{
@@ -103,7 +115,7 @@
             }
         }
         li{
-            padding: .3rem .25rem;
+            padding: .3rem .3rem;
             border-bottom: 1px solid #e8e8e8;
             line-height: 0.5rem;
             overflow: hidden;
@@ -119,6 +131,9 @@
             h4{
                 font-weight:normal;
                 font-size: @fs-text-md;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
             p{
                 font-size: @fs-text-md;
@@ -136,8 +151,9 @@
                 }
                 a{
                     font-style:normal;
+                    width:1.4rem;
                     height:0.45rem;
-                    padding:0 0.15rem;
+                    text-align: center;
                     line-height: 0.45rem;
                     border: 1px solid #c5c5c5;
                     border-radius: 1rem;
@@ -153,7 +169,7 @@
         background:#fff;
         font-size:@fs-text-md;
         li{
-            padding:0.2rem;
+            padding:0.2rem 0.3rem;
             border-bottom:1px solid #e2e2e2;
             line-height: 0.4rem;
 
@@ -182,24 +198,28 @@
         }
     }
     /*底部功能*/
-    .bottom,.bottom2{
-        padding:0.2rem 0.05rem;
-        text-align: right;
+    .bot_btns{
+        padding:0.2rem 0.3rem;
         background:#fff;
         font-size:@fs-text-md;
-        .revise,.again,.logistics,.appraise{
-            width:1.5rem;
+        position:fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:10;
+
+        a{
+            width:1.4rem;
             height:0.48rem;
-            display: inline-block;
+            float:right;
+            margin-left:0.1rem;
             text-align: center;
-            /*padding:0.09rem 0.2rem;*/
             line-height: 0.48rem;
             border: 1px solid #c5c5c5;
             border-radius: 1rem;
             color:#333;
-            margin:0 0.15rem;
         }
-        .again,.appraise{
+        a:first-child{
             border-color:#2fb4ef;
             color:#2fb4ef;
         }

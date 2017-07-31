@@ -19,14 +19,24 @@ export const buyList = [
         name:'A Bathing Ape蓝染长袖衬衫',
         model:'蓝色 XL',
         price:'256',
-        quantity:'1'
+        quantity:'1',
+        service:'',
     },
     {
         imgsrc:require('../assets/goods_2.jpg'),
         name:'四季出品 日本现货jklfsj',
         model:'褐色 XL',
         price:'358',
-        quantity:'2'
+        quantity:'2',
+        service:'退款成功'
+    },
+    {
+        imgsrc:require('../assets/goods_2.jpg'),
+        name:'四季出品 日本现货jklfsj',
+        model:'褐色 XL',
+        price:'358',
+        quantity:'2',
+        service:'退款中'
     }
 
 ];
