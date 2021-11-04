@@ -49,7 +49,7 @@ RSA.desAjax = function(options){
     	var decryptedData ;
     	var obj;
     	//
-    	if(exceptionurl.indexOf("CSMBP/data/order/getAvPrice.do")>-1 || exceptionurl.indexOf("CSMBP/data/order/getAvPriceForJson.do")>-1){
+    	if(exceptionurl.indexOf("/data/order/getAvPrice.do")>-1 || exceptionurl.indexOf("/data/order/getAvPriceForJson.do")>-1){
     		decryptedData = data;
     		obj = decryptedData;
     	}else{

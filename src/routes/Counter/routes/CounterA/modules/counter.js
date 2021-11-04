@@ -25,7 +25,7 @@ import Loading from 'components/Loading';
 import { hashHistory } from 'react-router';
 export const doubleAsync = () => {
   return (dispatch, getState) => {
-    // api.callApiPost("/CSMBP/data/airport/checkVersion.do?os=iPhone/Android", {
+    // api.callApiPost("/data/airport/checkVersion.do?os=iPhone/Android", {
     api.callApiPost({
       url:"",
       success:function(res){
