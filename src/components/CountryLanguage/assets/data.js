@@ -1,5 +1,5 @@
 const data = {
-  'url': 'global.csair.com/站点代码/语言代码/Home',
+  'url': '',
   'data': [{
     'id': 0,
     'www': 'Argentina',

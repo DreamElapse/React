@@ -161,7 +161,7 @@ webpackConfig.module.loaders.push({
   ]
 })
 
-const theme = lessToJs(fs.readFileSync(project.paths.client('styles/themes/csair.less'), 'utf8'))
+const theme = lessToJs(fs.readFileSync(project.paths.client('styles/themes/xxxx.less'), 'utf8'))
 webpackConfig.module.loaders.push({
   test    : /\.less$/,
   exclude : null,

@@ -37,8 +37,8 @@ import {productListcn, productListen, footerListcn, footerListen} from './data'
 export class HomeView extends Component {
   constructor (props) {
     super(props)
-    const cmsImgEn = [{img:defaultAdEn, url:'http://www.csair.com/cn/touchad/2016/20160510_0/20160509.html'}]
-    const cmsImgCn = [{img:defaultAdCn, url:'https://lucky.csair.com/bluegate/irzw/index.html'}]
+    const cmsImgEn = [{img:defaultAdEn, url:''}]
+    const cmsImgCn = [{img:defaultAdCn, url:''}]
 
     const defaultCmsImg = props.intl.locale == 'zh' ? cmsImgCn : cmsImgEn
     this.state = {
@@ -51,7 +51,7 @@ export class HomeView extends Component {
 
   componentWillReceiveProps(props){
     if(props.switches){
-      sessionStorage.setItem("com.csair.mbp.booking_new#getwitches", JSON.stringify(props.switches));
+      sessionStorage.setItem("", JSON.stringify(props.switches));
     }
   }
 
@@ -68,23 +68,6 @@ export class HomeView extends Component {
 
   tabbarRender () {
     const {intl, router} = this.props;
-    const tabbarList = [{
-      name: intl.messages['app.global.home'],
-      iconClass:'tabbar-home',
-      url: 'https://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.index'
-    }, {
-      name: intl.messages['app.global.booking'],
-      iconClass:'tabbar-book',
-      url: '/counter'
-    }, {
-      name: intl.messages['app.global.flightStatus'],
-      iconClass:'tabbar-dynamics',
-      url:'https://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.flightstatus_new/'
-    }, {
-      name: intl.messages['app.global.me'],
-      iconClass:'tabbar-my',
-      url:'https://m.csair.com/touch/com.csair.mbp.index/index.html#com.csair.mbp.login/'
-    }]
 
     return tabbarList.map((item, i) => (
       <TabBar.Item
@@ -122,8 +105,8 @@ export class HomeView extends Component {
             rightContent={[
               <img onClick={() => {
                 location.href = intl.locale === 'zh'
-                  ? 'http://feedback.csair.com/guestbook/m/index.html?s=touch'
-                  : 'http://feedback.csair.com/guestbook/en/m/index.html?s=touch'
+                  ? ''
+                  : ''
               }}
                 src={gb}
                 key={'gb'}
@@ -151,7 +134,7 @@ export class HomeView extends Component {
 
           {intl.locale === 'zh' && <NoticeBar className='home-tips' icon={null}
             onClick={()=>{
-              location.href='http://www.csair.com/cn/touchad/2016/20160817/20160816.html';
+              location.href='';
             }}>
           <Icon type='' className='security-tips' /> 购票安全提示</NoticeBar>}
          <WhiteSpace />

@@ -25,7 +25,7 @@ class Header extends React.Component {
       },
       rightContent: '',
       onRightClick: () => {
-        window.location.href = "https://m.csair.com";
+        window.location.href = "";
       },
       leftClassName:'',
     }
