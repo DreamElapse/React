@@ -9,9 +9,6 @@
     分支一: dev
     分支二：docs
     
-    命令行：
-        git clone https://git.coding.net/Sonny/CSAIR-H5.git -b dev -l CSAIR-H5-dev 
-        git clone https://git.coding.net/Sonny/CSAIR-H5.git -b docs -l CSAIR-H5-docs 
         
     以上命令克隆远程两个分支
     

@@ -36,9 +36,9 @@ if (project.env === 'development') {
   // these files. This middleware doesn't need to be enabled outside
   // of development since this directory will be copied into ~/dist
   // when the application is compiled
-  app.use('/api', proxy({ target: 'http://localhost:9000', changeOrigin: true }))
-  app.use('/CSMBP', proxy({ target: 'http://10.92.21.18:8080', changeOrigin: true }))
-  app.use('/task', proxy({ target: 'http://10.92.21.85:80', changeOrigin: true }))
+  // app.use('/api', proxy({ target: 'http://localhost:9000', changeOrigin: true }))
+  // app.use('/CSMBP', proxy({ target: 'http://1:8080', changeOrigin: true }))
+  // app.use('/task', proxy({ target: 'http://1:80', changeOrigin: true }))
 
   // This rewrites all routes requests to the root /index.html file
   // (ignoring file requests). If you want to implement universal

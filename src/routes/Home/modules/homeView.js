@@ -11,7 +11,7 @@ export const GET_SWITCHES = 'GET_SWITCHES'
 // ------------------------------------
 export const getCmsAd = () => {
 
-  const url = '/task/cmsad.shtml?lang=zh-cn';
+  const url = '';
   return (dispatch, getState) => {
     return api.callApi({
       url: url,
@@ -26,7 +26,7 @@ export const getCmsAd = () => {
 }
 
 export const getSwitches= () => {
-  const url = `/CSMBP/data/config/switches.do?type=MOBILE&APPTYPE=touch&chanel=touch&lang=zh&_=1490063501726`
+  const url = ``
   return (dispatch, getState) => {
     return api.callApi({
       url: url,

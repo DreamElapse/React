@@ -27,7 +27,7 @@ export const doubleAsync = () => {
   return (dispatch, getState) => {
     // api.callApiPost("/CSMBP/data/airport/checkVersion.do?os=iPhone/Android", {
     api.callApiPost({
-      url:"/CSMBP/data/empApply/sendValidateMsg.do",
+      url:"",
       success:function(res){
         dispatch({
           type    : COUNTER_DOUBLE_ASYNC,
@@ -44,7 +44,7 @@ export const doubleAsync = () => {
 export const getUserInfo = () => {
   return (dispatch, getState) => {
     return api.callApiPost({
-      url: "/CSMBP/data/account/login/tokenLogin.do",
+      url: "",
       success:function(res) {
         console.log(res);
       }

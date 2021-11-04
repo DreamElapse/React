@@ -60,7 +60,7 @@ export const FETCH_AIRPORT_DATA = 'FETCH_AIRPORT_DATA'
 export const fetchAirPortData = (strVersion) => {
   return (dispatch, getState) => {
     return api.callApi({
-      url: '/CSMBP/data/airport/checkVersion.do?os=iPhone/Android&version=' + strVersion,
+      url: '',
       success: function(result) {
         dispatch({
           type: FETCH_AIRPORT_DATA,
